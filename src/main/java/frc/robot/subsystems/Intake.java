@@ -2,7 +2,7 @@
 // copied from 2023 BunnyBot  1/22/2024 Rod N
 // ROBOTBUILDER TYPE: Subsystem.
 
-package frc.robot.subsystems.swervedrive;
+package frc.robot.subsystems;
 
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;

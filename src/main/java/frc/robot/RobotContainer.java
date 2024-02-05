@@ -1,6 +1,18 @@
-// Copyright (c) FIRST and other WPILib contributors.
-// Open Source Software; you can modify and/or share it under the terms of
-// the WPILib BSD license file in the root directory of this project.
+// 3711 swerveBot 2024
+// 2/5/2024
+
+// started with YAGSL (bronco 7636 )
+// Spent most of January getting it to work on BasilSwerveBot.
+// attenuated drive by 0.65 in RobotContainer
+// Set CAN Id's in Src>Main>Deploy>Swerve>neo>
+//   servedrive.json  10 and null canbus
+// Src>Main>Deploy>Swerve>neo>modules  backleft, etc.
+//   CAN Id's, and absolute encoder offsets  inverted angle = true
+// Src>Main>Deploy>Swerve>neo>modules  physical properties
+//   rampRate drive 1.25  angle  0.5025  not certain if these are good?
+//   original values were 0.25 *************************
+
+// 2/5/2024 moved Intake, Shooter, etc from tankBot 2024-3.  I
 
 package frc.robot;
 
@@ -20,6 +32,7 @@ import frc.robot.commands.swervedrive.drivebase.AbsoluteFieldDrive;
 import frc.robot.commands.swervedrive.drivebase.AbsoluteDriveAdv;
 import frc.robot.commands.swervedrive.drivebase.TeleopDrive;
 import frc.robot.subsystems.swervedrive.SwerveSubsystem;
+
 import java.io.File;
 
 /**

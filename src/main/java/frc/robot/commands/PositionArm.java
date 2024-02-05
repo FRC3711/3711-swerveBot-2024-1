@@ -1,8 +1,7 @@
 
-package frc.robot.commands.swervedrive;
+package frc.robot.commands;
 import edu.wpi.first.wpilibj2.command.Command;
-
-import frc.robot.subsystems.swervedrive.Intake;
+import frc.robot.subsystems.Intake;
 
 public class PositionArm extends Command {
        
